@@ -5,9 +5,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  justify-content: center;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.airbnb{
+  text-align: center;
+  justify-content: center;
+  color: #FF5A5F;
+  display: center;
+}
+
+.cont_airbnb{
+  padding: 10px;
+  
+
 }
