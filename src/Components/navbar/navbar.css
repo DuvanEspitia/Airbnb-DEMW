@@ -1,0 +1,16 @@
+.navbar{
+    background-color: #48CFAE;
+   
+}
+.navbar-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.img-logo{
+    width: 10%;
+}
