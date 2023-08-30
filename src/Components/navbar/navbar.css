@@ -1,5 +1,6 @@
 .navbar{
     background-color: #48CFAE;
+    border-radius: 0px 0px 20px 20px; 
    
 }
 .navbar-left{
@@ -11,6 +12,17 @@
 }
 
 .img-logo{
+
     width: 10%;
+}
+
+
+.img-logo-menu{
+    width: 7%;
+}
+.text-nav{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(42, 14, 14);
 }
 
