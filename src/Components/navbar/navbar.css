@@ -11,10 +11,12 @@
     
 }
 
-
 .img-logo{
-    width: 6%;
+
+    width: 10%;
 }
+
+
 .img-logo-menu{
     width: 7%;
 }
@@ -23,3 +25,4 @@
     font-weight: 600;
     color: rgb(42, 14, 14);
 }
+

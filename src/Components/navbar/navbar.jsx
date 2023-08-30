@@ -11,7 +11,7 @@ function Navbar() {
 
     <nav className="navbar">
       <div>
-        <ul class="navbar-nav  mx-auto justify-content-end">
+        <ul className="navbar-nav  mx-auto justify-content-end">
 
           <li className='navbar-left'>
             <img src={logo} className="img-logo" alt="" />
