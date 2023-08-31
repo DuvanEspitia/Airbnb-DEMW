@@ -1,19 +1,12 @@
 .ayuda_cont {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: auto;
 }
 
 .pic_ayuda1 {
     width: 40%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-}
-
-.pic_ayuda_cont {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -26,6 +19,8 @@
     flex-wrap: nowrap;
     align-items: center;
     padding: 20px;
+    padding-right: 15%;
+
 }
 
 .issue {

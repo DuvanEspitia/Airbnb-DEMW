@@ -20,6 +20,7 @@ function Navbar() {
         <ul className="navbar-nav  mx-auto justify-content-end">
 
           <li className='navbar-left'>
+
             <img src={logo} className="img-logo" alt=""></img>
            
 
@@ -40,7 +41,7 @@ function Navbar() {
    
             </div>
             
-       
+
 
           </li>
 
