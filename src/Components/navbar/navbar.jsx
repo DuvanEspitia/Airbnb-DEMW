@@ -16,7 +16,7 @@ function Navbar() {
           <li className='navbar-left'>
             <img src={logo} className="img-logo" alt="" />
             <h1 className='text-nav'>Explora, Elige, Reserva:
-              <br></br>Tu hogar lejos de casa te espera aquí
+              Tu hogar lejos de casa te espera aquí
             </h1>
 
             <img src={logouser} className='img-logo-menu' alt="" />

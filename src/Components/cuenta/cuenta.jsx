@@ -17,7 +17,7 @@ function Cuenta() {
 
                 </div>
                 <div className='los_inputs'>
-                    <h1 className='titulo_mensajeria'>Mi cuenta</h1>
+                    <h1 className='titulo_cuenta'>Mi cuenta</h1>
                     <br>
                     </br>
                     <div className='input_name'>
@@ -42,10 +42,6 @@ function Cuenta() {
                         <button type="button" className="btn">Guardar</button>
                     </div>
                 </div>
-
-
-
-
             </div>
         </div>
 
