@@ -39,11 +39,9 @@ function Help() {
 
         <img src='..\img\help.png' className='pic_ayuda' alt="" width={30} />
         <img src={helpPic} className='pic_ayuda1' alt="" />
-
-
       </div>
-    </div>
 
+    </div>
   );
 }
 
