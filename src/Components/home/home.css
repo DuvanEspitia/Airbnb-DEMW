@@ -1,4 +1,5 @@
 .target{
+    
     background-color: #e6e9e8;
     border-style: solid;
     border-width: 1px;
@@ -7,6 +8,7 @@
     margin-top: 25px;
     margin-right: 10px;
     margin-left: 10px;
+   
 }
 .container{
     width: auto !important;
