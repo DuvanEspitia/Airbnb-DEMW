@@ -23,6 +23,8 @@ width: 40%;
     display: block;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+
 }
 
 .ubicacion{
@@ -30,6 +32,8 @@ width: 40%;
     display: block;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+
 }
 
 .precio{
@@ -37,6 +41,8 @@ width: 40%;
     display: block;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+
 }
 
 .descripcion{
@@ -45,6 +51,8 @@ width: 40%;
     flex-direction: column;
     width: 500px;
     height: 100px; 
+    border-radius: 17px;
+
 }
 
 .comodidades{
@@ -53,6 +61,8 @@ width: 40%;
     display: block;
     display: flex;
     flex-direction: column;
+    border-radius: 17px;
+
 }
 
 .btn_guardar{
