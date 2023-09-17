@@ -41,7 +41,7 @@ function Edita_espacio() {
                     <br>
                     </br>
                     <div className='input_name'>
-                        <input type="text" className="comodidades" name="name" placeholder="Comodidades y elementos"  required="" minLength="4" maxLength="20" size="25" />
+                        <input type="text" className="comodidades" name="name" placeholder="Comodidades y elementos" required="" minLength="4" maxLength="20" size="25" />
                     </div>
                     <br>
                     </br>

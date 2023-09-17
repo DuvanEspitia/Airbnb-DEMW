@@ -18,16 +18,21 @@ width: 40%;
     
 }
 
-.mail{
+.mailC{
     display: block;
+    border-radius: 10px;
 }
 
-.surname{
+.surnameC{
     display: block;
+    border-radius: 10px;
+
 }
 
-.name{
+.nameC{
     display: block;
+    border-radius: 10px;
+
 }
 
 .btn_guardar{
