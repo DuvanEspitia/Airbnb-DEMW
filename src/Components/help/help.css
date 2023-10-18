@@ -15,11 +15,11 @@
 
 .mensajeria {
     display: flex;
-    flex-direction: column-reverse;
     flex-wrap: nowrap;
     align-items: center;
     padding: 20px;
     padding-right: 15%;
+    flex-direction: column;
 
 }
 
