@@ -23,23 +23,28 @@
 
 }
 
+.input_name{
+    display: flex;
+        flex-direction: column;
+}
+
+
 .issue {
     width: 300px;
     height: 100px; 
     display: block;
-    border-radius: 17px;
-
+    border-radius: 5px;
 }
 
 .mail{
     display: block;
-    border-radius: 10px;
+    border-radius: 5px;
 
 }
 
 .name{
     display: block;
-    border-radius: 10px;
+    border-radius: 5px;
 
 }
 

@@ -34,32 +34,30 @@ function Help() {
           <form ref={form} onSubmit={sendEmail} className='form-controller'>
 
             <div className='input_name'>
-              <label for="name">Nombre: </label>
-              <input type="text" className="name" name="from_name" required="" minLength="4" maxLength="20" size="25" width={20} />
-            </div>
-
-            <div className='input_name'>
-              <label for="name">Correo: </label>
-              <input type="email" className="mail" name="email" required="" minLength="4" maxLength="20" size="25" />
+              <input type="text" className="name" name="from_name" required="" minLength="4" maxLength="20" placeholder='Nombre' size="25" />
             </div>
             <br>
             </br>
 
             <div className='input_name'>
-              <label for="name">Escribe que inconveniente tienes: </label>
-              <input type="text" className="issue" name="message" required="" minLength="4" maxLength="20" size="25" />
-              
+              <input type="email" className="mail" name="email" required="" minLength="4" maxLength="20" size="25" placeholder="Correo" />
             </div>
             <br>
             </br>
 
-            <div class="buton">
-              <button type='submit' class="btn btn-success">Enviar</button>
+            <div className='input_name'>
+              <textarea type="text" className="issue" name="message" required="" minLength="4" maxLength="20" size="25" placeholder="Escribe que inconveniente tienes" />
+            </div>
+            <br>
+            </br>
+
+            <div className='buton'>
+              <button type='submit' className='btn btn-success'>Enviar</button>
             </div>
           </form>
         </div>
 
-        <img src='..\img\help.png' className='pic_ayuda' alt="" width={30} />
+        <img src='..\img\help.png' className='pic_ayuda' alt="" />
         <img src={helpPic} className='pic_ayuda1' alt="" />
       </div>
 
