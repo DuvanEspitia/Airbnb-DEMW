@@ -22,13 +22,13 @@ function Cuenta() {
                     </br>
                     <div className='input_name'>
                         <label for="name">Nombre: </label>
-                        <input type="text" className="nameC" name="name" required="" minLength="4" maxLength="20" size="25" width={20} />
+                        <input type="text" className="nameC" name="name" required="" minLength="4" maxLength="20" size="25" />
                     </div>
                     <br>
                     </br>
                     <div className='input_name'>
                         <label for="name">Apellido: </label>
-                        <input type="text" className="surnameC" name="name" required="" minLength="4" maxLength="20" size="25" width={20} />
+                        <input type="text" className="surnameC" name="name" required="" minLength="4" maxLength="20" size="25" />
                     </div>
                     <br>
                     </br>
