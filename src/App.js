@@ -15,10 +15,12 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' exact element={<Home />} />
+          <Route path='/home' exact element={<Home />} />
           <Route path='/help' exact element={<Help />} />
           <Route path='/form' exact element={<Form />} />
           <Route path='/cuenta' exact element={<Cuenta />} />
           <Route path='/edita_espacio' exact element={<Edita_espacio />} />
+          <Route path='/form' exact element={<Form />} />
         </Routes>
       </Router>
     </div>

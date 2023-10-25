@@ -3,6 +3,7 @@ import './form.css';
 import InformacionBasica from "./informacionBasica"
 import Tipoespacio from "./tipoespacio"
 import Ubicacion from "./Ubicacion"
+
 function Form() {
 
     const [page, setPage] = useState(0);

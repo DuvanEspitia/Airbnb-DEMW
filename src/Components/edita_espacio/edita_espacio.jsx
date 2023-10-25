@@ -45,7 +45,7 @@ function Edita_espacio() {
                     </div>
                     <br>
                     </br>
-                    <div class="buton">
+                    <div className="buton">
                         <button type="button" className="btn">Guardar</button>
                     </div>
                 </div>

@@ -10,8 +10,8 @@ function Home() {
   return (
     <div className="App">
       <div className='container'>
-        <div class='row'>
-          <div class="col-md-4">
+        <div className='row'>
+          <div className="col-md-4">
             <div className='target'>
               <div className='centrar'>
                 <img className='img-target' alt='' src='https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'></img>

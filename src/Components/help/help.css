@@ -15,31 +15,36 @@
 
 .mensajeria {
     display: flex;
-    flex-direction: column-reverse;
     flex-wrap: nowrap;
     align-items: center;
     padding: 20px;
     padding-right: 15%;
+    flex-direction: column;
 
 }
+
+.input_name{
+    display: flex;
+        flex-direction: column;
+}
+
 
 .issue {
     width: 300px;
     height: 100px; 
     display: block;
-    border-radius: 17px;
-
+    border-radius: 5px;
 }
 
 .mail{
     display: block;
-    border-radius: 10px;
+    border-radius: 5px;
 
 }
 
 .name{
     display: block;
-    border-radius: 10px;
+    border-radius: 5px;
 
 }
 
