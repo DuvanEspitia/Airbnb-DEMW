@@ -5,6 +5,7 @@ import './navbar.css';
 import "bootstrap/dist/css/bootstrap.css"
 import logouser from '../img/image.png'
 import logo from "../img/image-removebg-preview1.png"
+
 import Help from '../help/help';
 
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Input, Label } from 'reactstrap';
@@ -26,6 +27,13 @@ function Navbar() {
     setState2(true);
   }
 
+
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Input, label, Label } from 'reactstrap';
+
+function Navbar() {
+  const [state, setState] = useState(false);
+  const abrirModal = () => { setState(!state); }
+
   return (
 
     <nav className="navbar">
@@ -43,9 +51,13 @@ function Navbar() {
               </button>
 
               <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+
                 <li><a className="dropdown-item" onClick={abrirModalIngresar} href="#">Iniciar sesión</a></li>
                 <li><a className="dropdown-item" onClick={setState2} href="#">Crear cuenta</a></li>
                 <li><a className="dropdown-item" href="help">Ayuda</a></li>
+                <li><a class="dropdown-item" onClick={abrirModal} href="#">Acción</a></li>
+                <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                <li><a class="dropdown-item" href="#">Algo más aqui</a></li>
               </ul>
 
             </div>
@@ -142,6 +154,31 @@ function Navbar() {
               </> : null
           }
 
+      <Modal isOpen={state} >
+        <ModalHeader>
+          <Label >Inicia sesión</Label>
+        </ModalHeader>
+
+        <ModalBody>
+          <FormGroup>
+            <h6 for="email">Correo</h6>
+            <Input type='text' id='email'></Input>
+          </FormGroup>
+          <FormGroup>
+            <h6 for="password">Contraseña</h6>
+            <Input type='text' id='contraseña'>
+            </Input>
+          </FormGroup>
+          <FormGroup>
+            <div className='ingresar'>
+              <Button onClick={abrirModal} color='secondary'>Ingresar</Button>
+            </div>
+          </FormGroup>
+        </ModalBody>
+
+        <ModalFooter>
+          <p> ¿No te has registrado?</p>
+          <Button color='primary'>Regístrate</Button>
         </ModalFooter>
       </Modal>
 
