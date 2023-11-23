@@ -1,0 +1,81 @@
+.cont_img_casa{
+padding: 0px;
+width: 40%;
+}
+
+.casa1{
+    width: 60%;
+}
+
+.editar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 20px;
+    align-content: space-around;
+    justify-content: center;
+    
+}
+
+.titulo{
+    width: 500px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+
+.ubicacion{
+    width: 500px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+
+.precio{
+    width: 500px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+
+.descripcion{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 100px; 
+    border-radius: 17px;
+
+}
+
+.comodidades{
+    width: 500px; 
+    height: 100px; 
+    display: block;
+    display: flex;
+    flex-direction: column;
+    border-radius: 17px;
+
+}
+
+.btn_guardar{
+    background-color: #48CFAE;
+}
+
+.button{
+    display: flex;
+}
+
+.los_inputs{
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

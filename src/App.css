@@ -1,7 +1,7 @@
 .App {
   text-align: center;
+  font-family: Perpetua,Baskerville,Big Caslon,Palatino Linotype,Palatino,URW Palladio L,Nimbus Roman No9 L,serif; 
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;

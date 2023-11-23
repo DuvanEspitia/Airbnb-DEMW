@@ -1,0 +1,48 @@
+.cont_avatar{
+padding: 0px;
+width: 40%;
+}
+
+.avatar1{
+    width: 40%;
+}
+
+.cuenta{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 20px;
+    align-content: space-around;
+    justify-content: center;
+    
+}
+
+.mailC{
+    display: block;
+    border-radius: 10px;
+}
+
+.surnameC{
+    display: block;
+    border-radius: 10px;
+
+}
+
+.nameC{
+    display: block;
+    border-radius: 10px;
+
+}
+
+.btn_guardar{
+    background-color: #48CFAE;
+}
+
+.button{
+    display: flex;
+}
+
+.los_inputs{
+    padding-left: 25px;
+}

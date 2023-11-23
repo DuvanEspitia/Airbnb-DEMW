@@ -1,0 +1,57 @@
+.ayuda_cont {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+}
+
+.pic_ayuda1 {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.mensajeria {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 20px;
+    padding-right: 15%;
+    flex-direction: column;
+
+}
+
+.input_name{
+    display: flex;
+        flex-direction: column;
+}
+
+
+.issue {
+    width: 300px;
+    height: 100px; 
+    display: block;
+    border-radius: 5px;
+}
+
+.mail{
+    display: block;
+    border-radius: 5px;
+
+}
+
+.name{
+    display: block;
+    border-radius: 5px;
+
+}
+
+.btn{
+    background-color: #48CFAE;
+}
+
+.button{
+    display: flex;
+}
