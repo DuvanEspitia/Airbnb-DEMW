@@ -48,7 +48,9 @@
     border: none;
     cursor: pointer;
 }
-
+.text-saludo{
+    display: flex;
+}
 .dropdown-menu {
     position: absolute !important;
     list-style: none !important;

@@ -1,80 +1,75 @@
-import React from 'react';
-import 'bootstrap';
+import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './home.css';
-import "bootstrap/dist/css/bootstrap.css"
-
-
+import { obtenerTodosLosEspacios } from '../espacio/rutas'; // Actualiza con la ruta correcta
+import { Espace } from "./espace";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faBuilding, faShip, faMountainCity, faHouseFlag, faHotel, faLeaf, faIgloo, faTractor,faSliders,faGem,faUmbrellaBeach} from '@fortawesome/free-solid-svg-icons';
+import { useAuth } from '../../Helpers/Estados/AuthContext';
 function Home() {
+  const {authState} = useAuth();
+  const [espacios, setEspacios] = useState([]);
+  const [filtroTipo, setFiltroTipo] = useState(null);
+  const { isAuthenticated,user } = authState;
+  console.log(isAuthenticated, user)
+  useEffect(() => {
+
+    const obtenerYMostrarEspacios = async () => {
+      try {
+        const espaciosData = await obtenerTodosLosEspacios();
+        setEspacios(espaciosData);
+          } catch (error) {
+        console.error('Error al obtener y mostrar espacios:', error);
+      }
+    };
+
+    obtenerYMostrarEspacios();
+  }, [isAuthenticated, user]); 
+
+  const handleFiltrar = (tipo) => {
+    setFiltroTipo(tipo);
+  };
+
+  const espaciosFiltrados = filtroTipo
+    ? espacios.filter((espacio) => espacio.tespacio === filtroTipo)
+    : espacios;
 
   return (
-    <div className="App">
-      <div className='container'>
-        <div class='row'>
-          <div class="col-md-4">
-            <div className='target'>
-              <div className='centrar'>
-                <img className='img-target' alt='' src='https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'></img>
-                <p className='decrip-h'>Ubiación:</p>
-                <p className='decrip-h'>Descripción:</p>
-                <p className='decrip-h'>Precio:</p>
-              </div>
-            </div>
-          </div>
-          <div className='col-md-4'>
-            <div className='target'>
-              <div className='centrar'>
-                <img className='img-target' alt='' src='https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'></img>
-                <p className='decrip-h'>Ubiación:</p>
-                <p className='decrip-h'>Descripción:</p>
-                <p className='decrip-h'>Precio:</p>
-              </div>
-            </div>
-          </div>
-          <div className='col-md-4'>
-            <div className='target'>
-              <div className='centrar'>
-                <img className='img-target' alt='' src='https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'></img>
-                <p className='decrip-h'>Ubiación:</p>
-                <p className='decrip-h'>Descripción:</p>
-                <p className='decrip-h'>Precio:</p>
-              </div>
-            </div>
-          </div>
-          <div className='col-md-4'>
-            <div className='target'>
-              <div className='centrar'>
-                <img className='img-target' alt='' src='https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'></img>
-                <p className='decrip-h'>Ubiación:</p>
-                <p className='decrip-h'>Descripción:</p>
-                <p className='decrip-h'>Precio:</p>
-              </div>
-            </div>
-          </div>
-          <div className='col-md-4'>
-            <div className='target'>
-              <div className='centrar'>
-                <img className='img-target' alt='' src='https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'></img>
-                <p className='decrip-h'>Ubiación:</p>
-                <p className='decrip-h'>Descripción:</p>
-                <p className='decrip-h'>Precio:</p>
-              </div>
-            </div>
-          </div>
-          <div className='col-md-4'>
-            <div className='target'>
-              <div className='centrar'>
-                <img className='img-target'alt='' src='https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'></img>
-                <p className='decrip-h'>Ubiación:</p>
-                <p className='decrip-h'>Descripción:</p>
-                <p className='decrip-h'>Precio:</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
+    <div>
+      <div className='c-filtro'>
+      <button className='filtro' onClick={() => handleFiltrar('casa')}>
+          <FontAwesomeIcon icon={faHome} /> Casa
+        </button>
+        <button className='filtro' onClick={() => handleFiltrar('apartamento')}>
+          <FontAwesomeIcon icon={faBuilding} /> Apartamento
+        </button>
+        <button className='filtro' onClick={() => handleFiltrar('barco')}>
+        <FontAwesomeIcon icon={faShip} />Barco</button>
+        <button className='filtro' onClick={() => handleFiltrar('cabañas')}>
+        <FontAwesomeIcon icon={faHouseFlag} />Cabañas</button>
+        <button className='filtro' onClick={() => handleFiltrar('casa rural')}>
+         <FontAwesomeIcon icon={faMountainCity} />Casa rural</button>
+        <button className='filtro' onClick={() => handleFiltrar('domo')}>
+        <FontAwesomeIcon icon={faIgloo} />Domo</button>
+        <button className='filtro' onClick={() => handleFiltrar('hotel')}>
+        <FontAwesomeIcon icon={faHotel} /> Hotel</button>
+        <button className='filtro' onClick={() => handleFiltrar('casa ecologica')}>
+        <FontAwesomeIcon icon={faLeaf} />Casa ecologica</button>
+        <button className='filtro' onClick={() => handleFiltrar('granja')}>
+        <FontAwesomeIcon icon={faTractor} />Granja</button>
+        <button className='filtro' onClick={() => handleFiltrar('islas')}>
+        <FontAwesomeIcon icon={faUmbrellaBeach} />Islas</button>
+        <button className='filtro' onClick={() => handleFiltrar('mansion')}>
+        <FontAwesomeIcon icon={faGem} />Mansion</button>
+        <button className='filtroc' onClick={() => handleFiltrar(null)}>
+        <FontAwesomeIcon icon={faSliders} /> Limpiar Filtros</button>
       </div>
 
+      <div className='products'>
+        {espaciosFiltrados.map((espacio) => (
+          <Espace espacio={espacio} key={espacio._id} />
+        ))}
+      </div>
     </div>
   );
 }

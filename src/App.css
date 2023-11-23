@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-family: Perpetua,Baskerville,Big Caslon,Palatino Linotype,Palatino,URW Palladio L,Nimbus Roman No9 L,serif; 
+  font-family:Verdana (sans-serif) 
 }
 .App-logo {
   height: 40vmin;
@@ -27,7 +27,16 @@
 .App-link {
   color: #61dafb;
 }
+.edit{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
+  .centC {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -25,3 +25,63 @@
     font-size: 18px;
     margin-bottom: 0px;
 }
+.products {
+    width: 100% ;
+    height: auto ;
+    display: grid ;
+    grid-template-columns: 25% 25% 25% 25% ;
+    place-items: center ;
+  }
+  
+  .product {
+    background-color: white;
+    border-radius: 15px;
+    width: 80%;
+    height: auto;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 1px 8px rgba(0, 0, 0, 0.388);
+  }
+  .product img {
+    width: 40vh;
+    height:30vh;
+  }
+  
+  .product .description1 {
+    text-align: center;
+  }
+  .img-p-c{
+    width: 70%;
+    height: auto;
+  }
+  
+.c-filtro{
+  padding: 10px;
+}
+.filtro{
+  transition-duration: 500ms;
+  text-decoration: none;
+  background-color: rgb(225, 225, 225);
+  border-radius: 10px;
+  border: none;
+}
+.filtroc{
+  text-decoration: none;
+  color: white;
+  background-color: rgb(57, 56, 56);
+  border-radius: 10px;
+  border: none;
+}
+.filtroc:hover{
+ 
+  background-color: rgb(76, 75, 75);
+}
+.filtro:hover{
+  transition-duration: 500ms;
+  color: white;
+  
+  background-color: rgb(99, 98, 98);
+}
